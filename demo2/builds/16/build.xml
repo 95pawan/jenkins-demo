@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.17">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>hp_admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>31</queueId>
+  <timestamp>1520845779952</timestamp>
+  <startTime>1520845779953</startTime>
+  <result>SUCCESS</result>
+  <duration>2527</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+    stage (&apos;Bring up Container in Azure environment&apos;){
+    sh &apos; sudo docker pull hello-world&apos;
+	sh &apos; sudo docker run -d --name demo -p 442:8080 hello-world&apos;
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>7985354</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>14855578</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>110001212</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>52407906</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>11739223</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>13</iota>
+    <head>1:13</head>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

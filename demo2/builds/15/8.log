@@ -1,0 +1,4 @@
+[demo1] Running shell script
++ sudo docker run -d --name demo -p 443:8080 hello-world
+docker: Error response from daemon: Conflict. The container name "/demo" is already in use by container "668560d3f66d1d210183c4facad05238d133f9fb91a4ecb6812f11370cc5882d". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.

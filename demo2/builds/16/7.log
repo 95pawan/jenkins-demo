@@ -1,0 +1,9 @@
+[demo2] Running shell script
++ sudo docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+ca4f61b1923c: Pulling fs layer
+ca4f61b1923c: Download complete
+ca4f61b1923c: Pull complete
+Digest: sha256:083de497cff944f969d8499ab94f07134c50bcf5e6b9559b27182d3fa80ce3f7
+Status: Downloaded newer image for hello-world:latest
