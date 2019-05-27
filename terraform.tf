@@ -115,14 +115,6 @@ resource "azurerm_virtual_machine_extension" "test" {
   type                 = "CustomScriptForLinux"
   type_handler_version = "1.2"
 
-  settings = <<SETTINGS
-    {
-        "fileUris": ["https://raw.githubusercontent.com/NisargaG/Jenkins/master/jenkins_install.sh"],
-          "commandToExecute": "sh jenkins_install.sh"
-		"fileUris": ["https://raw.githubusercontent.com/95pawan/jenkins-demo/demo2.xml"
-		  "commandToExecute": "xml demo2.xml"
-		  
-    }
 SETTINGS
 
   tags {
